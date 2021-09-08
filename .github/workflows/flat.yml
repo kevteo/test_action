@@ -18,4 +18,4 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://httpbin.org/get
+          http_url: https://api.coindesk.com/v2/bpi/currentprice.json
