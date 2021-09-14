@@ -1,5 +1,12 @@
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+        input1:
+          description: 'Log level'     
+          required: true
+          default: 'warning'
+        input2:
+          description: 'Test scenario tags'
   push:
     paths:
       - .github/workflows/flat.yml
@@ -20,3 +27,9 @@ jobs:
         with:
           http_url: https://api.coindesk.com/v2/bpi/currentprice.json
           downloaded_filename: data.json
+  printInputs:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Log level: ${{ github.event.inputs.logLevel }}"
+        echo "Tags: ${{ github.event.inputs.tags }}" 
