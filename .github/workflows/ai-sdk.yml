@@ -1,8 +1,11 @@
+name: ai-sdk
+
 on:
   workflow_dispatch: {}
   push:
-    paths:
-      - .github/workflows/flat.yml
+    branches:
+        - main
+        - development
   schedule:
     - cron: "*/5 * * * *"
 jobs:
@@ -20,3 +23,9 @@ jobs:
         with:
           http_url: https://api.coindesk.com/v2/bpi/currentprice.json
           downloaded_filename: data.json
+      - name: Merge Data
+        uses: 0research/ai-sdk@v1
+        with:
+          merge_strategy: overwrite
+          json1: json1/
+          json2: json2/
