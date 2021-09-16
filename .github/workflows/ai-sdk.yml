@@ -35,6 +35,8 @@ jobs:
           merge_strategy: overwrite
           json1: json1/
           json2: json2/
+      - name: Test Print JSON
+        run: echo ${{ steps.mergeData.outputs.merged_json_1 }}
       - name: Write Json 1
         uses: jsdaniell/create-json@1.1.2
         with: 
