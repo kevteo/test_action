@@ -26,6 +26,8 @@ jobs:
   ai-sdk:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
       - name: Merge Data
         id: mergeData
         uses: 0research/ai-sdk@main
