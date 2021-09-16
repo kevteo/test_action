@@ -38,7 +38,7 @@ jobs:
       - name: Write Json 1
         uses: jsdaniell/create-json@1.1.2
         with: 
-          name: "json1"
-          json: ${{ steps.mergeData.outputs.merge_data_1 }}
+          name: "merged_json_1.json"
+          json: ${{ steps.mergeData.outputs.merge_json_1 }}
 
       
