@@ -39,6 +39,6 @@ jobs:
         uses: jsdaniell/create-json@1.1.2
         with: 
           name: "merged_json_1.json"
-          json: ${{ steps.mergeData.outputs.merged_json_1 }}
+          json: '{"name":"jsdaniell", "password":"mypass"}'
 
       
