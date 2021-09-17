@@ -32,7 +32,7 @@ jobs:
         id: mergeData
         uses: 0research/ai-sdk@main
         with:
-          merge_strategy: overwrite
+          merge_strategy: version
       - name: Test Print JSON
         run: echo ${{ steps.mergeData.outputs.merged_json }}
       - name: Write Json 1
