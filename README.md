@@ -1,4 +1,3 @@
 # Test AI-SDK
  
-a
-b
+c
