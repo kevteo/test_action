@@ -4,6 +4,5 @@ s
 s
 s
 c
-c
-d
+cs
 d
