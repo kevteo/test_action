@@ -30,8 +30,8 @@ jobs:
           downloaded_filename: json2.json
       - name: Merge Data
         id: mergeData
-        #uses: 0research/ai-sdk@main
-        uses: kevteo/test_action2@main
+        uses: 0research/ai-sdk@main
+#         uses: kevteo/test_action2@main
         with:
           merge_strategy: objectMerge
 
