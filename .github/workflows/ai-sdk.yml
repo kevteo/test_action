@@ -34,16 +34,5 @@ jobs:
         uses: kevteo/test_action2@main
         with:
           merge_strategy: objectMerge
-#       - name: Test Print JSON
-#         run: echo ${{ toJSON(steps.mergeData.outputs.merged_json) }}
-#       - name: Write Json 1
-#         uses: jsdaniell/create-json@1.1.2
-#         with: 
-#           name: "merged_json.json"
-#           json: ${{ steps.mergeData.outputs.merged_json }}
-#       - name: Commit
-#         uses: EndBug/add-and-commit@v7
-#         with:
-#           default_author: github_actions
 
       
