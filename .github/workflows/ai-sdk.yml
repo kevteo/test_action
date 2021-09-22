@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 jobs:
-  flat:
+  ai-sdk:
     runs-on: ubuntu-latest
     steps:
       - name: Setup deno
@@ -18,27 +18,32 @@ jobs:
           deno-version: v1.x
       - name: Check out repo
         uses: actions/checkout@v2
-      - name: Fetch data
+      - name: Fetch data 1
         uses: githubocto/flat@v3
         with:
           http_url: https://api.coindesk.com/v2/bpi/currentprice.json
-          downloaded_filename: data.json
-  ai-sdk:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repo
-        uses: actions/checkout@v2
+          downloaded_filename: json1.json
+      - name: Fetch data 2
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://free.currconv.com/api/v7/convert?q=USD_PHP&compact=ultra&apiKey=4709550d97d6056b11e5
+          downloaded_filename: json2.json
       - name: Merge Data
         id: mergeData
-        uses: 0research/ai-sdk@main
+        #uses: 0research/ai-sdk@main
+        uses: kevteo/test_action2@main
         with:
-          merge_strategy: overwrite
-          json1: json1/
-          json2: json2/
-      - name: Write Json 1
-        uses: jsdaniell/create-json@1.1.2
-        with: 
-          name: "merged_json_1.json"
-          json: '{"name":"jsdaniell", "password":"mypass"}'
+          merge_strategy: objectMerge
+#       - name: Test Print JSON
+#         run: echo ${{ toJSON(steps.mergeData.outputs.merged_json) }}
+#       - name: Write Json 1
+#         uses: jsdaniell/create-json@1.1.2
+#         with: 
+#           name: "merged_json.json"
+#           json: ${{ steps.mergeData.outputs.merged_json }}
+#       - name: Commit
+#         uses: EndBug/add-and-commit@v7
+#         with:
+#           default_author: github_actions
 
       
