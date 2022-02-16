@@ -1,25 +1,25 @@
 [
     {
-        "time_updated": "Feb 16, 2022 12:47:00 UTC",
-        "time_updatedISO": "2022-02-16T12:47:00+00:00",
-        "time_updateduk": "Feb 16, 2022 at 12:47 GMT",
+        "time_updated": "Feb 16, 2022 13:02:00 UTC",
+        "time_updatedISO": "2022-02-16T13:02:00+00:00",
+        "time_updateduk": "Feb 16, 2022 at 13:02 GMT",
         "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
         "chartName": "Bitcoin",
         "bpi_USD_code": "USD",
         "bpi_USD_symbol": "&#36;",
-        "bpi_USD_rate": "44,043.3061",
+        "bpi_USD_rate": "44,090.8570",
         "bpi_USD_description": "United States Dollar",
-        "bpi_USD_rate_float": 44043.3061,
+        "bpi_USD_rate_float": 44090.857,
         "bpi_GBP_code": "GBP",
         "bpi_GBP_symbol": "&pound;",
-        "bpi_GBP_rate": "32,484.8451",
+        "bpi_GBP_rate": "32,519.9170",
         "bpi_GBP_description": "British Pound Sterling",
-        "bpi_GBP_rate_float": 32484.8451,
+        "bpi_GBP_rate_float": 32519.917,
         "bpi_EUR_code": "EUR",
         "bpi_EUR_symbol": "&euro;",
-        "bpi_EUR_rate": "38,685.3058",
+        "bpi_EUR_rate": "38,727.0719",
         "bpi_EUR_description": "Euro",
-        "bpi_EUR_rate_float": 38685.3058,
+        "bpi_EUR_rate_float": 38727.0719,
         "bpi_CNY_code": "CNY",
         "bpi_CNY_symbol": "&yen;",
         "bpi_CNY_rate": "40,202.5000",
@@ -27,6 +27,6 @@
         "bpi_CNY_rate_float": 40202.5
     },
     {
-        "USD_PHP": 51.305499
+        "USD_PHP": 51.310504
     }
 ]
