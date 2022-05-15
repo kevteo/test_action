@@ -1,7 +1,7 @@
 {
-    "time_updated": "May 15, 2022 16:04:00 UTC",
-    "time_updatedISO": "2022-05-15T16:04:00+00:00",
-    "time_updateduk": "May 15, 2022 at 17:04 BST",
+    "time_updated": "May 15, 2022 16:38:00 UTC",
+    "time_updatedISO": "2022-05-15T16:38:00+00:00",
+    "time_updateduk": "May 15, 2022 at 17:38 BST",
     "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
     "chartName": "Bitcoin",
     "bpi_USD_code": "USD",
