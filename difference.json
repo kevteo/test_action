@@ -1,8 +1,8 @@
 [
     {
-        "time_updated": "Jun 20, 2022 08:52:00 UTC",
-        "time_updatedISO": "2022-06-20T08:52:00+00:00",
-        "time_updateduk": "Jun 20, 2022 at 09:52 BST",
+        "time_updated": "Jun 20, 2022 08:59:00 UTC",
+        "time_updatedISO": "2022-06-20T08:59:00+00:00",
+        "time_updateduk": "Jun 20, 2022 at 09:59 BST",
         "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
         "chartName": "Bitcoin",
         "bpi_USD_code": "USD",
@@ -27,6 +27,6 @@
         "bpi_CNY_rate_float": 40202.5
     },
     {
-        "USD_PHP": 54.077014
+        "USD_PHP": 54.056027
     }
 ]
